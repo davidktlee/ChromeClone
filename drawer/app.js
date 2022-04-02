@@ -1,7 +1,8 @@
 const canvas = document.querySelector('#jsCanvas')
 const ctx = canvas.getContext('2d')
-const input = document.querySelector('#jsRange')
+const range = document.querySelector('#jsRange')
 const colors = document.getElementsByClassName('jsColors')
+const mode = document.getElementById('jsMode')
 
 canvas.width = 700
 canvas.height = 700
@@ -10,6 +11,7 @@ ctx.strokeStyle = '#2c2c2c'
 ctx.lineWidth = 2.5
 
 let painting = false
+let filling = false
 
 function startPainting() {
   painting = true
@@ -30,13 +32,28 @@ function onMouseMove(event) {
     ctx.stroke()
   }
 }
-input.addEventListener('mouseleave', lineWidth)
+
 function lineWidth(event) {
   ctx.lineWidth = event.target.value
 }
 
 function onMouseDown(event) {
   painting = true
+}
+
+function handleColorClick(event) {
+  ctx.strokeStyle = event.target.style.backgroundColor
+}
+
+function handleModeClick() {
+  if (filling === true) {
+    filling = false
+    mode.innerText = 'Fill'
+    
+  } else {
+    filling = true
+    mode.innerText = 'Paint'
+  }
 }
 
 if (canvas) {
@@ -49,4 +66,6 @@ if (canvas) {
 if (painting == true) {
 }
 
-console.log(Array.from(colors))
+range.addEventListener('mouseleave', lineWidth)
+mode.addEventListener('click', handleModeClick)
+Array.from(colors).forEach((color) => color.addEventListener('click', handleColorClick))
