@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+$foodiful: #7b1fa2;
+$background: #f5f5f5;
+$test: orange;
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: $background;
+  .inner {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 45px;
+      font-weight: bold;
+      color: $foodiful;
+      text-shadow: 2px 2px 2px gray;
+      img {
+        margin-left: 30px;
+      }
+    }
+  }
+}
