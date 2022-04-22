@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OPENGRAPH -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Foodiful" />
     <meta property="og:title" content="Foodiful" />
@@ -11,7 +12,22 @@
     <meta property="og:image" content="./foodifuljpg/foodiful-logo.jpg" />
     <!-- <meta property="og:url" /> -->
     <link rel="shortcut icon" href="./foodifuljpg/favicon-16x16.png" />
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="main.scss" />
+    <!-- SCRIPT -->
     <script defer src="main.js"></script>
 
     <title>Foodiful</title>
@@ -19,6 +35,7 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="inner">
         <a href="javascript:void(0)"> 푸디풀
@@ -26,7 +43,72 @@
         </a>
       </div>
     </header>
-    
+    <!-- NAV -->
+
+    <nav class="nav">
+      <div class="inner">
+        <div class="nav-menu material-icons">menu</div>
+      </div>
+      <ul class="nav-menu__items hide">
+        <div class="inner">
+          <h3>푸디풀</h3>
+          <ul class="foodiful">
+            <li>
+              <a href="javascript:void(0)">푸디풀은?</a>
+            </li>
+            <li><a href="javascript:void(0)">연혁</a></li>
+            <li><a href="javascript:void(0)">위치</a></li>
+          </ul>
+          <h3>메뉴</h3>
+          <ul class="menu">
+            <li><a href="javascript:void(0)">흑임자 다식</a></li>
+            <li><a href="javascript:void(0)">무지개 쌀강정</a></li>
+            <li><a href="javascript:void(0)">무지개 바람떡</a></li>
+            <li><a href="javascript:void(0)">인후단</a></li>
+            <li><a href="javascript:void(0)">곶감단지</a></li>
+            <li><a href="javascript:void(0)">새우포, 전복포</a></li>
+            <li><a href="javascript:void(0)">휘낭시에</a></li>
+            <li></li>
+          </ul>
+          <h3>클래스 수업</h3>
+          <ul class="day-class">
+            <li><a href="javascript:void(0)">무지개 쌀강정</a></li>
+            <li><a href="javascript:void(0)">곶감단지</a></li>
+            <li><a href="javascript:void(0)">인후단</a></li>
+          </ul>
+
+        </div>
+      </ul>
+    </nav>
+    <!-- SWIPER -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/dasik20pieces.jpg" alt="dasik" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/windbojagi.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/dasik10pieces.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/windcake.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/dasik10pieces.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/dasik10pieces.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./foodifuljpg/dasik10pieces.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </body>
 
 </html>

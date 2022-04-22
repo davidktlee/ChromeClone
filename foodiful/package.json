@@ -1,10 +1,10 @@
 {
-  "name": "amazon",
+  "name": "foodiful",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "parcel index.html",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "keywords": [],
