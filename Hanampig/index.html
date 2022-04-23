@@ -4,6 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LODASH -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="./scss/main.scss" />
@@ -87,27 +90,55 @@
     <div class="main">
       <div class="inner">
         <div class="main-basic">
-
           <div class="title">
-            <p>영업은 짧고 워라밸은 긴<br />
-              <span>기본매장</span>
-            </p>
+            <p>영업은 짧고 워라밸은 긴<br /></p>
+            <span>기본매장</span>
+
           </div>
           <img src="./img/profile-1.png" alt="" />
           <div class="description">
-            <p></p>
-            <p></p>
+            <div class="content">
+              <p class="first">점심부터 저녁까지 온종일</p><br />
+              <p class="second">매장에 매여 있는 아이템이었다면</p><br />
+              <p class="third">하남돼지집을 선택하지 않았을 거에요.</p>
+              <p class="interviewer">본투비 라이더 / 당산역점 김형욱 사장</p>
+            </div>
           </div>
-          <div class="monthly-top3">
-            <div class="title"></div>
-            <p><span></span></p>
-            <p><span></span></p>
-            <p><span></span></p>
+
+          <div class="monthly-title">
+            <p class="monthly-title__text">월간 홀 매출 </p>
+            <span class="monthly-title__top3">TOP3</span>
           </div>
+
+          <div class="monthly-content1">
+            <img src="./img/mv1-1_no.png" alt="" />
+            <p>인천시 S매장</p>
+            <div class="flex-empty"></div>
+            <span>174,628,000</span>
+          </div>
+
+          <div class="monthly-content2">
+            <img src="./img/mv1-1_no.png" alt="" />
+            <p>하남시 H매장</p>
+            <div class="flex-empty"></div>
+            <span>152,514,000</span>
+          </div>
+
+          <div class="monthly-content3">
+            <img src="./img/mv1-1_no.png" alt="" />
+            <p>서울시 강남구 S매장</p>
+            <div class="flex-empty"></div>
+            <span>115,174,000</span>
+          </div>
+
           <img src="./img/ch_stamp.png" alt="" />
-          <p></p>
+
+          <div class="recommend">
+            <img src="./img/rec_symbol.png" alt="" />
+            <div class="recommend__text">추천 유망상권</div>
+          </div>
           <ul>
-            <li></li>
+            <li>군산수송동점</li>
             <li></li>
             <li></li>
             <li></li>
@@ -118,21 +149,46 @@
             <li></li>
           </ul>
           <p>기본매장 알아보기</p>
-
         </div>
+
         <div class="main-deliver">
 
-          <div class="title"></div>
-          <img src="./img/profile-1.png" alt="" />
-          <div class="description">
-            <p></p>
-            <p></p>
+          <div class="title">
+            <p>홀x배달 다 되는 만등돌<br /></p>
+            <span>복합매장</span>
           </div>
-          <div class="monthly-top3">
-            <div class="title"></div>
-            <p><span></span></p>
-            <p><span></span></p>
-            <p><span></span></p>
+          <img src="./img/profile-2.png" alt="" />
+          <div class="description">
+            <div class="content">
+              <p class="first">요즘 젊은 분들 집에서 고기 안 굽잖아요</p><br />
+              <p class="second">오피스텔 밀집지역이라</p><br />
+              <p class="third">솔로 이코노미 효과를 체감하고 있어요.</p>
+              <p class="interviewer">영업이 젤 쉬운/대치은마점 장성현 사장</p>
+            </div>
+          </div>
+          <div class="monthly-title">
+            <p class="monthly-title__text">월간 홀 매출 </p>
+            <span class="monthly-title__top3">TOP3</span>
+          </div>
+          <div class="monthly-content1">
+            <img src="./img/mv1-1_no.png" alt="" />
+            <p>서울시 서대문구 S매장</p>
+            <div class="flex-empty"></div>
+            <span>62,937,000</span>
+          </div>
+
+          <div class="monthly-content2">
+            <img src="./img/mv1-1_no.png" alt="" />
+            <p>서울시 강남구 D매장</p>
+            <div class="flex-empty"></div>
+            <span>59,950,000</span>
+          </div>
+
+          <div class="monthly-content3">
+            <img src="./img/mv1-1_no.png" alt="" />
+            <p>서울시 서초구 G매장</p>
+            <div class="flex-empty"></div>
+            <span>42,167,000</span>
           </div>
           <img src="./img/ch_stamp.png" alt="" />
           <p></p>
@@ -150,8 +206,8 @@
           <p>기본매장 알아보기</p>
         </div>
       </div>
-
     </div>
+
   </body>
 
 </html>
